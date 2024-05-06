@@ -6,6 +6,7 @@ set shiftwidth=4
 set list
 set listchars=tab:__
 set nocompatible
+set backspace=indent,eol,start
 
 syntax on
 
@@ -17,9 +18,9 @@ tnoremap jj <C-\><C-n>
 nnoremap tt :Tt<cr>
 nnoremap <C-e> :Tree<cr>
 nnoremap nn <C-w><C-w>
-nnoremap <C-s><C-s> :VimspectorReset<cr>
-" nnoremap <silent> BB <Cmd>execute('normal! <Plug>VimspectorToggleBreakpoint')<cr>
-" nnoremap <silent> BR <Cmd>execute('normal! <Plug>VimspectorContinue')<cr>
+nnoremap BF :VimspectorReset<cr>
+nnoremap <silent> BB <Cmd>execute('normal! <Plug>VimspectorToggleBreakpoint')<cr>
+nnoremap <silent> BR <Cmd>execute('normal! <Plug>VimspectorContinue')<cr>
 
 call plug#begin('~/.vim/plugged')
  Plug 'puremourning/vimspector'
