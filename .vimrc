@@ -17,7 +17,7 @@ inoremap jj <esc>
 tnoremap jj <C-\><C-n>
 nnoremap tt :Tt<cr>
 nnoremap <C-e> :Tree<cr>
-nnoremap nn <C-w><C-w>
+nnoremap <C-n> <C-w><C-w>
 nnoremap BF :VimspectorReset<cr>
 nnoremap <silent> BB <Cmd>execute('normal! <Plug>VimspectorToggleBreakpoint')<cr>
 nnoremap <silent> BR <Cmd>execute('normal! <Plug>VimspectorContinue')<cr>
