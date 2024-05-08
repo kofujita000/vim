@@ -1,0 +1,28 @@
+set number
+set nowrap
+set tabstop=4
+set shiftwidth=4
+set list
+set listchars=tab:__
+set nocompatible
+set backspace=indent,eol,start
+set clipboard=unnamedplus
+
+syntax on
+
+inoremap jj <esc>
+tnoremap jj <C-\><C-n>
+nnoremap tt :Tt<cr>
+nnoremap <C-e> :Tree<cr>
+nnoremap <C-n> <C-w><C-w>
+
+function! OpenTerminal()
+ " ターミナルを非同期で開く
+ execute 'term'
+
+ execute 'wincmd w'
+
+ execute 'q'
+endfunction
+
+autocmd VimEnter * call OpenTerminal()

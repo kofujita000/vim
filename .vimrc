@@ -7,6 +7,7 @@ set list
 set listchars=tab:__
 set nocompatible
 set backspace=indent,eol,start
+set clipboard=unnamedplus
 
 syntax on
 
@@ -36,5 +37,5 @@ let g:vimspector_enable_mappings = 'HUMAN'
 
 let g:coc_global_extensions = [
  \ 'coc-clangd',
- \ 'coc-python',
+ \ 'coc-python'
  \ ]

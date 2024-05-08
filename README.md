@@ -19,3 +19,6 @@ rm -rf vim
 
 <br>
 
+> nodejsのバイナリインストール方法
+> [次のURL](http://www.nodejs.tech/ja/download)からバイナリをダウンロードすればなんとかなります
+
