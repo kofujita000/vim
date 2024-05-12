@@ -11,7 +11,7 @@ set clipboard=unnamedplus
 syntax on
 
 inoremap jj <esc>
-tnoremap jj <C-\><C-n>
+tnoremap JJ <C-\><C-n>
 nnoremap tt :Tt<cr>
 nnoremap <C-e> :Tree<cr>
 nnoremap <C-n> <C-w><C-w>
