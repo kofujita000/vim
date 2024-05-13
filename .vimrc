@@ -8,6 +8,7 @@ set listchars=tab:__
 set nocompatible
 set backspace=indent,eol,start
 set clipboard=unnamedplus
+set hlsearch
 
 syntax on
 
@@ -16,6 +17,8 @@ command! Tree execute 'Fern . -drawer -toggle -reveal=all -width=40' | execute '
 
 inoremap jj <esc>
 tnoremap JJ <C-\><C-n>
+nnoremap H b
+nnoremap L w
 nnoremap wj <C-w>j
 nnoremap wk <C-w>k
 nnoremap wh <C-w>h
