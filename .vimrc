@@ -16,6 +16,9 @@ syntax on
 command! Tt execute 'belowright term' | execute 'resize 7'
 command! Tree execute 'Fern . -drawer -toggle -reveal=all -width=40' | execute 'vertical resize 28'
 
+command! -nargs=1 hr execute 'resize ' . <q-args>
+command! -nargs=1 vr execute 'vertical resize ' . <q-args>
+
 inoremap jj <esc>
 tnoremap JJ <C-\><C-n>
 vnoremap H b
@@ -35,6 +38,8 @@ vnoremap P "_dP
 vnoremap p "_dp
 nnoremap U <C-u>
 nnoremap N <C-d>
+nnoremap A <C-a>
+nnoremap S <C-x>
 nnoremap th <Cmd>execute('tabprevious')<cr>
 nnoremap tl <Cmd>execute('tabnext')<cr>
 nnoremap tt <Cmd>execute('Tt')<cr>
