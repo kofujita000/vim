@@ -10,6 +10,7 @@ set backspace=indent,eol,start
 set clipboard=unnamedplus
 set hlsearch
 set incsearch
+set timeoutlen=200
 
 syntax on
 
@@ -28,6 +29,10 @@ nnoremap wj <C-w>j
 nnoremap wk <C-w>k
 nnoremap wh <C-w>h
 nnoremap wl <C-w>l
+tnoremap WJ <C-w>j
+tnoremap WK <C-w>k
+tnoremap WH <C-w>h
+tnoremap WL <C-w>l
 nnoremap wnj <Cmd>execute('belowright new')<cr>
 nnoremap wnk <Cmd>execute('new')<cr>
 nnoremap wnh <Cmd>execute('leftabove vs')<cr>
@@ -87,6 +92,9 @@ let g:gitgutter_sign_modified = '>'
 let g:gitgutter_sign_removed = '-'
 let g:gitgutter_sign_removed_first_line = '^'
 let g:gitgutter_sign_modified_removed = '<'
+let g:gitgutter_override_sign_column_highlight = 1
+highlight SignColumn guibg=bg
+highlight SignColumn ctermbg=darkgrey
 
 highlight Include ctermfg=8 guifg=#000000
 highlight Function ctermfg=3 guifg=#00ff00
