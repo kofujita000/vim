@@ -93,8 +93,21 @@ let g:gitgutter_sign_removed = '-'
 let g:gitgutter_sign_removed_first_line = '^'
 let g:gitgutter_sign_modified_removed = '<'
 let g:gitgutter_override_sign_column_highlight = 1
-highlight SignColumn guibg=bg
-highlight SignColumn ctermbg=darkgrey
+
+highlight SignColumn guibg=NONE ctermbg=NONE
+
+" Define custom highlight groups for gitgutter signs
+highlight GitGutterAdd    guifg=#00ff00 ctermfg=2 guibg=NONE ctermbg=NONE
+highlight GitGutterChange guifg=#ffff00 ctermfg=3 guibg=NONE ctermbg=NONE
+highlight GitGutterDelete guifg=#ff0000 ctermfg=1 guibg=NONE ctermbg=NONE
+
+autocmd BufWritePost * GitGutter
+
+" " Map gitgutter signs to custom highlight groups
+" let g:gitgutter_override_sign_column_highlight = 1
+" highlight link GitGutterAddSign    GitGutterAdd
+" highlight link GitGutterChangeSign GitGutterChange
+" highlight link GitGutterDeleteSign GitGutterDelete
 
 highlight Include ctermfg=8 guifg=#000000
 highlight Function ctermfg=3 guifg=#00ff00
