@@ -22,6 +22,10 @@ nnoremap wj <C-w>j
 nnoremap wk <C-w>k
 nnoremap wh <C-w>h
 nnoremap wl <C-w>l
+tnoremap WJ <C-w>j
+tnoremap WK <C-w>k
+tnoremap WH <C-w>h
+tnoremap WL <C-w>l
 nnoremap z <C-r>
 nnoremap d "_d
 xnoremap d "_d
@@ -41,6 +45,11 @@ nnoremap tnj <Cmd>execute('belowright term')<cr>
 nnoremap tnk <Cmd>execute('term')<cr>
 nnoremap tnh <Cmd>execute('vert term')<cr>
 nnoremap tnl <Cmd>call OpenRightTerminal()<cr>
+tnoremap TNJ <Cmd>execute('belowright term')<cr>
+tnoremap TNK <Cmd>execute('term')<cr>
+tnoremap TNH <Cmd>execute('vert term')<cr>
+tnoremap TNL <Cmd>call OpenRightTerminal()<cr>
+
 
 function! OpenRightTerminal()
  " ターミナルを非同期で開く
