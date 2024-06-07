@@ -7,14 +7,52 @@ set listchars=tab:__
 set nocompatible
 set backspace=indent,eol,start
 set clipboard=unnamedplus
+set hlsearch
+set incsearch
 
 syntax on
 
 inoremap jj <esc>
 tnoremap JJ <C-\><C-n>
-nnoremap tt :Tt<cr>
-nnoremap <C-e> :Tree<cr>
-nnoremap <C-n> <C-w><C-w>
+vnoremap H b
+vnoremap L w
+nnoremap H b
+nnoremap L w
+nnoremap wj <C-w>j
+nnoremap wk <C-w>k
+nnoremap wh <C-w>h
+nnoremap wl <C-w>l
+nnoremap z <C-r>
+nnoremap d "_d
+xnoremap d "_d
+xnoremap P "_dP
+xnoremap p "_dp
+vnoremap P "_dP
+vnoremap p "_dp
+nnoremap U <C-u>
+nnoremap N <C-d>
+nnoremap A <C-a>
+nnoremap S <C-x>
+nnoremap rh :resize
+nnoremap rv :vertical resize
+nnoremap th <Cmd>execute('tabprevious')<cr>
+nnoremap tl <Cmd>execute('tabnext')<cr>
+nnoremap tnj <Cmd>execute('belowright term')<cr>
+nnoremap tnk <Cmd>execute('term')<cr>
+nnoremap tnh <Cmd>execute('vert term')<cr>
+nnoremap tnl <Cmd>call OpenRightTerminal()<cr>
+
+function! OpenRightTerminal()
+ " ターミナルを非同期で開く
+ 
+ execute 'vert rightbelow split'
+
+ execute 'term'
+
+ execute 'wincmd w'
+
+ execute 'q'
+endfunction
 
 function! OpenTerminal()
  " ターミナルを非同期で開く
