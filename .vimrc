@@ -16,9 +16,8 @@ syntax on
 command! Tt execute 'belowright term' | execute 'resize 7'
 command! Tree execute 'Fern . -drawer -toggle -reveal=all -width=40' | execute 'vertical resize 28'
 
-command! -nargs=1 hr execute 'resize ' . <q-args>
-command! -nargs=1 vr execute 'vertical resize ' . <q-args>
-
+nnoremap rh :resize 
+nnoremap rv :vertical resize 
 inoremap jj <esc>
 tnoremap JJ <C-\><C-n>
 vnoremap H b
@@ -29,6 +28,10 @@ nnoremap wj <C-w>j
 nnoremap wk <C-w>k
 nnoremap wh <C-w>h
 nnoremap wl <C-w>l
+nnoremap wnj <Cmd>execute('belowright new')<cr>
+nnoremap wnk <Cmd>execute('new')<cr>
+nnoremap wnh <Cmd>execute('leftabove vs')<cr>
+nnoremap wnl <Cmd>execute('vs')<cr>
 nnoremap z <C-r>
 nnoremap d "_d
 xnoremap d "_d
@@ -42,6 +45,8 @@ nnoremap A <C-a>
 nnoremap S <C-x>
 nnoremap th <Cmd>execute('tabprevious')<cr>
 nnoremap tl <Cmd>execute('tabnext')<cr>
+nnoremap tnh <Cmd>execute('tabnew') \| execute('tabm -1')<cr>
+nnoremap tnl <Cmd>execute('tabnew')<cr>
 nnoremap tt <Cmd>execute('Tt')<cr>
 nnoremap <C-e> <Cmd>execute('Tree')<cr>
 nnoremap <C-n> <C-w><C-w>
@@ -56,6 +61,7 @@ call plug#begin('~/.vim/plugged')
  Plug 'lambdalisue/fern.vim'
  Plug 'octol/vim-cpp-enhanced-highlight'
  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install' }
+ Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 packloadall
@@ -75,6 +81,13 @@ let g:coc_config_home = '~/.vim/coc-settings.json'
 
 let g:fern#default_hidden=1
 
+" Use fontawesome icons as signs
+let g:gitgutter_sign_added = '+'
+let g:gitgutter_sign_modified = '>'
+let g:gitgutter_sign_removed = '-'
+let g:gitgutter_sign_removed_first_line = '^'
+let g:gitgutter_sign_modified_removed = '<'
+
 highlight Include ctermfg=8 guifg=#000000
 highlight Function ctermfg=3 guifg=#00ff00
 highlight String ctermfg=6 guifg=#ff00ff
@@ -86,3 +99,14 @@ autocmd FileType php setlocal expandtab
 autocmd FileType php setlocal tabstop=4
 autocmd FileType php setlocal shiftwidth=4
 autocmd FileType php setlocal softtabstop=4
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    " Fallback to Vim's native K command for non-LSP buffers
+    normal! K
+  endif
+endfunction
+
+nnoremap <silent> K :call ShowDocumentation()<CR>
