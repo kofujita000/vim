@@ -46,8 +46,8 @@ tnoremap wH <C-w>h
 tnoremap wL <C-w>l
 nnoremap wnj <Cmd>execute('belowright split')<cr>
 nnoremap wnk <Cmd>execute('split')<cr>
-nnoremap wnh <Cmd>execute('belowright vs')<cr>
-nnoremap wnl <Cmd>execute('vs')<cr>
+nnoremap wnh <Cmd>execute('vs')<cr>
+nnoremap wnl <Cmd>execute('belowright vs')<cr>
 nnoremap wnt <Cmd>call OpenTerminal()<cr>
 nnoremap z <C-r>
 nnoremap d "_d
