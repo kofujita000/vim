@@ -10,12 +10,22 @@ set backspace=indent,eol,start
 set clipboard=unnamedplus
 set hlsearch
 set incsearch
-set timeoutlen=200
+set timeoutlen=500
+
+highlight StatusLine guifg=Black guibg=DarkBlue ctermfg=Black ctermbg=DarkRed
+highlight StatusLineNC guifg=Black guibg=DarkBlue ctermfg=Black ctermbg=DarkBlue
+highlight StatusLineTerm guifg=DarkBlue guibg=Black ctermfg=DarkRed ctermbg=Black
+highlight StatusLineTermNC guifg=DarkBlue guibg=Black ctermfg=DarkBlue ctermbg=Black
+highlight VertSplit guifg=Black guibg=DarkBlue ctermfg=Black ctermbg=DarkBlue
+highlight TabLine guifg=Black guibg=DarkBlue ctermfg=DarkBlue ctermbg=Black
+highlight TabLineSel guifg=Black guibg=DarkBlue ctermfg=DarkRed ctermbg=Black
+highlight TabLineFill guifg=Black guibg=DarkBlue ctermfg=Black ctermbg=Black
 
 syntax on
 
 command! Tt execute 'belowright term' | execute 'resize 7'
-command! Tree execute 'Fern . -drawer -toggle -reveal=all -width=40' | execute 'vertical resize 28'
+command! Tree execute 'Fern ./ -drawer -toggle -reveal=all -width=40' | execute 'vertical resize 28'
+command! Q execute 'qa!'
 
 nnoremap rh :resize 
 nnoremap rv :vertical resize 
@@ -29,14 +39,16 @@ nnoremap wj <C-w>j
 nnoremap wk <C-w>k
 nnoremap wh <C-w>h
 nnoremap wl <C-w>l
-tnoremap WJ <C-w>j
-tnoremap WK <C-w>k
-tnoremap WH <C-w>h
-tnoremap WL <C-w>l
-nnoremap wnj <Cmd>execute('belowright new')<cr>
-nnoremap wnk <Cmd>execute('new')<cr>
-nnoremap wnh <Cmd>execute('leftabove vs')<cr>
+nnoremap wH <Cmd>execute('1wincmd w')<cr>
+tnoremap wJ <C-w>j
+tnoremap wK <C-w>k
+tnoremap wH <C-w>h
+tnoremap wL <C-w>l
+nnoremap wnj <Cmd>execute('belowright split')<cr>
+nnoremap wnk <Cmd>execute('split')<cr>
+nnoremap wnh <Cmd>execute('belowright vs')<cr>
 nnoremap wnl <Cmd>execute('vs')<cr>
+nnoremap wnt <Cmd>call OpenTerminal()<cr>
 nnoremap z <C-r>
 nnoremap d "_d
 xnoremap d "_d
@@ -54,11 +66,13 @@ nnoremap tnh <Cmd>execute('tabnew') \| execute('tabm -1')<cr>
 nnoremap tnl <Cmd>execute('tabnew')<cr>
 nnoremap tt <Cmd>execute('Tt')<cr>
 nnoremap <C-e> <Cmd>execute('Tree')<cr>
-nnoremap <C-n> <C-w><C-w>
+nnoremap <C-h> <Cmd>execute('wincmd H')<cr>
 nnoremap mp <Cmd>execute('MarkdownPreview')<cr>
 nnoremap BF <Cmd>execute('VimspectorReset')<cr>
 nnoremap <silent> BB <Cmd>execute('normal! <Plug>VimspectorToggleBreakpoint')<cr>
 nnoremap <silent> BR <Cmd>execute('normal! <Plug>VimspectorContinue')<cr>
+map f <Plug>Sneak_f
+map F <Plug>Sneak_F
 
 call plug#begin('~/.vim/plugged')
  Plug 'puremourning/vimspector'
@@ -67,6 +81,8 @@ call plug#begin('~/.vim/plugged')
  Plug 'octol/vim-cpp-enhanced-highlight'
  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install' }
  Plug 'airblade/vim-gitgutter'
+ Plug 'justinmk/vim-sneak'
+ Plug 'chrisbra/vim-filename'
 call plug#end()
 
 packloadall
@@ -85,6 +101,15 @@ let g:coc_global_extensions = [
 let g:coc_config_home = '~/.vim/coc-settings.json'
 
 let g:fern#default_hidden=1
+let g:fern#renderer = 'lightline'
+let g:fern#renderer_options = {
+  \ 'full_path': 0,
+  \ 'draw_devicons': 0,
+  \ 'column': 0,
+  \ 'go_to_input': 1,
+  \ 'winwidth': 30,
+  \ 'winminwidth': 30,
+  \ }
 
 " Use fontawesome icons as signs
 let g:gitgutter_sign_added = '+'
@@ -131,3 +156,12 @@ function! ShowDocumentation()
 endfunction
 
 nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! OpenTerminal()
+ " ターミナルを非同期で開く
+ execute 'term'
+
+ execute 'wincmd w'
+
+ execute 'q'
+endfunction
