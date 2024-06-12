@@ -1,5 +1,6 @@
 set number
 set nowrap
+
 set tabstop=4
 set shiftwidth=4
 set list
@@ -9,9 +10,22 @@ set backspace=indent,eol,start
 set clipboard=unnamedplus
 set hlsearch
 set incsearch
+set timeoutlen=500
+
+highlight StatusLine guifg=Black guibg=DarkBlue ctermfg=Black ctermbg=DarkRed
+highlight StatusLineNC guifg=Black guibg=DarkBlue ctermfg=Black ctermbg=DarkBlue
+highlight StatusLineTerm guifg=DarkBlue guibg=Black ctermfg=DarkRed ctermbg=Black
+highlight StatusLineTermNC guifg=DarkBlue guibg=Black ctermfg=DarkBlue ctermbg=Black
+highlight VertSplit guifg=Black guibg=DarkBlue ctermfg=Black ctermbg=DarkBlue
+highlight TabLine guifg=Black guibg=DarkBlue ctermfg=DarkBlue ctermbg=Black
+highlight TabLineSel guifg=Black guibg=DarkBlue ctermfg=DarkRed ctermbg=Black
+highlight TabLineFill guifg=Black guibg=DarkBlue ctermfg=Black ctermbg=Black
 
 syntax on
 
+command! Q execute 'qa!'
+nnoremap rh :resize 
+nnoremap rv :vertical resize 
 inoremap jj <esc>
 tnoremap JJ <C-\><C-n>
 vnoremap H b
@@ -22,10 +36,16 @@ nnoremap wj <C-w>j
 nnoremap wk <C-w>k
 nnoremap wh <C-w>h
 nnoremap wl <C-w>l
-tnoremap WJ <C-w>j
-tnoremap WK <C-w>k
-tnoremap WH <C-w>h
-tnoremap WL <C-w>l
+nnoremap wH <Cmd>execute('1wincmd w')<cr>
+tnoremap wJ <C-w>j
+tnoremap wK <C-w>k
+tnoremap wH <C-w>h
+tnoremap wL <C-w>l
+nnoremap wnj <Cmd>execute('belowright split')<cr>
+nnoremap wnk <Cmd>execute('split')<cr>
+nnoremap wnh <Cmd>execute('vs')<cr>
+nnoremap wnl <Cmd>execute('belowright vs')<cr>
+nnoremap wnt <Cmd>call OpenTerminal()<cr>
 nnoremap z <C-r>
 nnoremap d "_d
 xnoremap d "_d
@@ -37,18 +57,11 @@ nnoremap U <C-u>
 nnoremap N <C-d>
 nnoremap A <C-a>
 nnoremap S <C-x>
-nnoremap rh :resize
-nnoremap rv :vertical resize
 nnoremap th <Cmd>execute('tabprevious')<cr>
 nnoremap tl <Cmd>execute('tabnext')<cr>
-nnoremap tnj <Cmd>execute('belowright term')<cr>
-nnoremap tnk <Cmd>execute('term')<cr>
-nnoremap tnh <Cmd>execute('vert term')<cr>
-nnoremap tnl <Cmd>call OpenRightTerminal()<cr>
-tnoremap TNJ <Cmd>execute('belowright term')<cr>
-tnoremap TNK <Cmd>execute('term')<cr>
-tnoremap TNH <Cmd>execute('vert term')<cr>
-tnoremap TNL <Cmd>call OpenRightTerminal()<cr>
+nnoremap tnh <Cmd>execute('tabnew') \| execute('tabm -1')<cr>
+nnoremap tnl <Cmd>execute('tabnew')<cr>
+nnoremap tt <Cmd>execute('Tt')<cr>
 
 
 function! OpenRightTerminal()
