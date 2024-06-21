@@ -68,9 +68,12 @@ nnoremap tt <Cmd>execute('Tt')<cr>
 nnoremap <C-e> <Cmd>execute('Tree')<cr>
 nnoremap <C-h> <Cmd>execute('wincmd H')<cr>
 nnoremap mp <Cmd>execute('MarkdownPreview')<cr>
-nnoremap BF <Cmd>execute('VimspectorReset')<cr>
-nnoremap <silent> BB <Cmd>execute('normal! <Plug>VimspectorToggleBreakpoint')<cr>
-nnoremap <silent> BR <Cmd>execute('normal! <Plug>VimspectorContinue')<cr>
+nnoremap <silent> <C-f> <Cmd>execute('VimspectorReset')<cr>
+nnoremap <silent> <C-b> <Cmd>execute('normal! <Plug>VimspectorToggleBreakpoint')<cr>
+nnoremap <silent> <C-r> <Cmd>execute('normal! <Plug>VimspectorContinue')<cr>
+nnoremap <silent> <C-a> <F10>
+nnoremap <silent> <C-s> <F11>
+nnoremap <client> <C-d> <F12>
 map f <Plug>Sneak_f
 map F <Plug>Sneak_F
 
@@ -82,7 +85,7 @@ call plug#begin('~/.vim/plugged')
  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install' }
  Plug 'airblade/vim-gitgutter'
  Plug 'justinmk/vim-sneak'
- Plug 'chrisbra/vim-filename'
+ Plug 'tpope/vim-fugitive'
 call plug#end()
 
 packloadall
@@ -165,3 +168,10 @@ function! OpenTerminal()
 
  execute 'q'
 endfunction
+
+" カレントディレクトリに .vimrc が存在する場合、それを読み込む
+if getcwd() != $HOME && filereadable(".vimrc")
+  source .vimrc
+endif
+
+autocmd BufEnter * if isdirectory(expand('%')) | execute 'edit .' | execute 'Tree' | endif
