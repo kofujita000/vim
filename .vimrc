@@ -11,6 +11,10 @@ set clipboard=unnamedplus
 set hlsearch
 set incsearch
 set timeoutlen=500
+set statusline=%F%m%r%h%w\ [%{&ff}]\ [%{&fileencoding}]\ [POS=%l,%c]\ [%p%%]
+set laststatus=2
+set directory=${HOME}/.vim/swap/
+set directory^=${HOME}/.vim/swap//,%:p/
 
 highlight StatusLine guifg=Black guibg=DarkBlue ctermfg=Black ctermbg=DarkRed
 highlight StatusLineNC guifg=Black guibg=DarkBlue ctermfg=Black ctermbg=DarkBlue
@@ -64,6 +68,7 @@ nnoremap th <Cmd>execute('tabprevious')<cr>
 nnoremap tl <Cmd>execute('tabnext')<cr>
 nnoremap tnh <Cmd>execute('tabnew') \| execute('tabm -1')<cr>
 nnoremap tnl <Cmd>execute('tabnew')<cr>
+nnoremap <silent> tq <Cmd>execute('tabclose')<cr>
 nnoremap tt <Cmd>execute('Tt')<cr>
 nnoremap <C-e> <Cmd>execute('Tree')<cr>
 nnoremap <C-h> <Cmd>execute('wincmd H')<cr>
@@ -77,6 +82,69 @@ nnoremap <client> <C-d> <F12>
 map f <Plug>Sneak_f
 map F <Plug>Sneak_F
 
+function! JumpToDefinitionInNewTab()
+ let l:cursor_pos = getpos(".")
+ let current_file = expand('%:p')
+ execute 'tabnew'
+ execute 'edit' current_file
+ execute "call setpos('.', l:cursor_pos)"
+ execute "call CocAction('jumpDefinition')"
+endfunction
+
+function! GetCurrentFunctionName()
+  let l:symbols = CocAction('documentSymbols')
+  let l:line = line('.')
+
+  " Iterate over symbols to find the current function
+  for l:symbol in reverse(l:symbols)
+    if l:symbol['kind'] == 'Function'
+      if l:symbol['lnum'] == l:line
+        " Copy the function name to clipboard and return it
+        return l:symbol['text']
+      endif
+    endif
+  endfor
+
+  echo 'Function not found'
+  return ''
+endfunction
+
+function! SwitchSourceHeader()
+  " Save the current cursor position and file path
+  let l:cursor_pos = getpos(".")
+  let l:current_file = expand('%:p')
+  let l:func_name = GetCurrentFunctionName()
+
+  tabnew
+  edit l:current_file
+
+  execute "call setpos('.', l:cursor_pos)"
+
+  " Switch source/header files using clangd
+  execute "call CocAction('runCommand', 'clangd.switchSourceHeader')"
+
+  " Wait for CocAction to complete and then update the list of symbols
+  let l:symbols = CocAction('documentSymbols')
+  let l:line = line('.')
+
+  " Iterate over symbols to find the function definition in the new file
+  for l:symbol in reverse(l:symbols)
+    if l:symbol['kind'] == 'Function'
+      if l:symbol['text'] == l:func_name
+        " Move the cursor to the function definition
+        execute "call cursor(l:symbol['lnum'], l:symbol['col'])"
+        return
+      endif
+    endif
+  endfor
+
+  " If function is not found, show a message
+  echo 'Function definition not found in the new file'
+endfunction
+
+nnoremap <silent> M  <cmd>execute('call JumpToDefinitionInNewTab()')<cr>
+nnoremap <silent> gf <cmd>execute('call SwitchSourceHeader()')<cr>
+
 call plug#begin('~/.vim/plugged')
  Plug 'puremourning/vimspector'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -86,6 +154,10 @@ call plug#begin('~/.vim/plugged')
  Plug 'airblade/vim-gitgutter'
  Plug 'justinmk/vim-sneak'
  Plug 'tpope/vim-fugitive'
+ Plug 'nelstrom/vim-visual-star-search'
+ Plug 'jreybert/vimagit'
+
+ Plug 'kofujita000/vim-surround-char'
 call plug#end()
 
 packloadall
@@ -98,7 +170,8 @@ let g:coc_global_extensions = [
  \ 'coc-python',
  \ 'coc-phpls',
  \ 'coc-json',
- \ 'coc-tsserver'
+ \ 'coc-tsserver',
+ \ 'coc-java'
  \ ]
 
 let g:coc_config_home = '~/.vim/coc-settings.json'
@@ -148,6 +221,13 @@ autocmd FileType php setlocal expandtab
 autocmd FileType php setlocal tabstop=4
 autocmd FileType php setlocal shiftwidth=4
 autocmd FileType php setlocal softtabstop=4
+autocmd FileType php highlight phpFunctions ctermfg=3 guifg=#00ff00
+
+autocmd FileType java setlocal expandtab
+autocmd FileType java setlocal tabstop=4
+autocmd FileType java setlocal shiftwidth=4
+autocmd FileType java setlocal softtabstop=4
+autocmd FileType java highlight javaFunctions ctermfg=3 guifg=#00ff00
 
 function! ShowDocumentation()
   if CocAction('hasProvider', 'hover')
