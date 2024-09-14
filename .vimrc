@@ -156,6 +156,7 @@ call plug#begin('~/.vim/plugged')
  Plug 'tpope/vim-fugitive'
  Plug 'nelstrom/vim-visual-star-search'
  Plug 'jreybert/vimagit'
+ Plug 'yaocccc/vim-hlchunk'
 
  Plug 'kofujita000/vim-surround-char'
 call plug#end()
@@ -172,6 +173,7 @@ let g:coc_global_extensions = [
  \ 'coc-json',
  \ 'coc-tsserver',
  \ 'coc-java'
+ \ 'coc-julia'
  \ ]
 
 let g:coc_config_home = '~/.vim/coc-settings.json'
