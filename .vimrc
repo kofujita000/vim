@@ -29,7 +29,7 @@ syntax on
 
 command! Tt execute 'belowright term' | execute 'resize 7'
 command! Tree execute 'Fern ./ -drawer -toggle -reveal=all -width=40' | execute 'vertical resize 28'
-command! Q execute 'qa!'
+command! Q execute 'mksession! .session.vim' | execute 'qa!'
 
 nnoremap rh :resize 
 nnoremap rv :vertical resize 
@@ -172,7 +172,7 @@ let g:coc_global_extensions = [
  \ 'coc-phpls',
  \ 'coc-json',
  \ 'coc-tsserver',
- \ 'coc-java'
+ \ 'coc-java',
  \ 'coc-julia'
  \ ]
 
@@ -219,6 +219,16 @@ highlight cStatement ctermfg=10 guifg=#ff0000
 highlight Statement ctermfg=4 guifg=#00FF00
 highlight Repeat ctermfg=4 guifg=#00FF00
 
+autocmd FileType cpp setlocal expandtab
+autocmd FileType cpp setlocal tabstop=4
+autocmd FileType cpp setlocal shiftwidth=4
+autocmd FileType cpp setlocal softtabstop=4
+
+autocmd FileType h setlocal expandtab
+autocmd FileType h setlocal tabstop=4
+autocmd FileType h setlocal shiftwidth=4
+autocmd FileType h setlocal softtabstop=4
+
 autocmd FileType php setlocal expandtab
 autocmd FileType php setlocal tabstop=4
 autocmd FileType php setlocal shiftwidth=4
@@ -251,9 +261,38 @@ function! OpenTerminal()
  execute 'q'
 endfunction
 
-" カレントディレクトリに .vimrc が存在する場合、それを読み込む
-if getcwd() != $HOME && filereadable(".vimrc")
-  source .vimrc
+if argc() == 0 && filereadable(".session.vim")
+  silent! source .session.vim
 endif
 
 autocmd BufEnter * if isdirectory(expand('%')) | execute 'edit .' | execute 'Tree' | endif
+
+" what files are supported, default '*.ts,*.js,*.json,*.go,*.c'
+  let g:hlchunk_files = '*.ts,*.js,*.json,*.go,*.c,*.cpp,*.php,*.h'
+" highlight
+  au VimEnter * hi IndentLineSign ctermfg=248
+" delay default 50
+  let g:hlchunk_time_delay = 50
+" signpriority default 90
+  let g:hlchunk_priority = 90
+" hlchunk_theme_preset default 1
+  let g:hlchunk_theme = 1
+" hlchunk_theme_byuser default NULL
+" format: sign_texts: char[2][3], usenew: (0|1)[4] " [start end, middle]
+  let g:hlchunk_theme_byuser = { 'sign_texts': ['╭─', '│ ', '╰>'], 'usenew': [1, 1, 1, 1] }
+
+highlight VisualHighlight ctermbg=Yellow ctermfg=Black
+let g:highlight_ids=[]
+
+vnoremap <silent> mk :<C-u>let id = matchadd('VisualHighlight', '\%'.line("'<").'l\%'.col("'<").'c\_.*\%'.line("'>").'l\%'.(col("'>")+1).'c') \| call add(g:highlight_ids, id)<cr>
+
+function! ClearHighlight()
+  for id in g:highlight_ids
+    if id != -1
+      call matchdelete(id)
+    endif
+  endfor
+  let g:highlight_ids = []
+endfunction
+
+nnoremap <silent> mc :<C-u>call ClearHighlight()<cr>

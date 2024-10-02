@@ -1,0 +1,278 @@
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;7r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[7;1H
+SpecialKey     [38;5;81mxxx[m [38;5;159mterm=[mbold [38;5;159mctermfg=[m81 [38;5;159mguifg=[mCyan
+EndOfBuffer    [94mxxx[m [38;5;159mlinks to[m NonText
+NonText[8C[94mxxx[m [38;5;159mterm=[mbold [38;5;159mctermfg=[m12 [38;5;159mgui=[mbold [38;5;159mguifg=[mBlue
+Directory      [38;5;159mxxx[m [38;5;159mterm=[mbold [38;5;159mctermfg=[m159 [38;5;159mguifg=[mCyan
+ErrorMsg[7C[97m[41mxxx[m [38;5;159mterm=[mstandout [38;5;159mctermfg=[m15 [38;5;159mctermbg=[m1 [38;5;159mguifg=[mWhite [38;5;159mguibg=[mRed
+IncSearch      [7mxxx[m [38;5;159mterm=[mreverse [38;5;159mcterm=[mreverse [38;5;159mgui=[mreverse
+Search[9C[30m[103mxxx[m [38;5;159mterm=[mreverse [38;5;159mctermfg=[m0 [38;5;159mctermbg=[m11 [38;5;159mguifg=[mBlack [38;5;159mguibg=[mYellow
+CurSearch      [30m[103mxxx[m [38;5;159mlinks to[m Search
+MoreMsg[8C[38;5;121mxxx[m [38;5;159mterm=[mbold [38;5;159mctermfg=[m121 [38;5;159mgui=[mbold [38;5;159mguifg=[mSeaGreen
+ModeMsg[8C[1mxxx[m [38;5;159mterm=[mbold [38;5;159mcterm=[mbold [38;5;159mgui=[mbold
+LineNr[9C[93mxxx[m [38;5;159mterm=[munderline [38;5;159mctermfg=[m11 [38;5;159mguifg=[mYellow
+LineNrAbove    xxx cleared
+LineNrBelow    xxx cleared
+CursorLineNr   [4m[93mxxx[m [38;5;159mterm=[mbold [38;5;159mcterm=[munderline [38;5;159mctermfg=[m11 [38;5;159mgui=[mbold [38;5;159mguifg=[mYellow
+CursorLineSign [96mxxx[m [38;5;159mlinks to[m SignColumn
+CursorLineFold [96m[48;5;242mxxx[m [38;5;159mlinks to[m FoldColumn
+Question[7C[38;5;121mxxx[m [38;5;159mterm=[mstandout [38;5;159mctermfg=[m121 [38;5;159mgui=[mbold [38;5;159mguifg=[mGreen
+StatusLine     [1m[7m[30m[41mxxx[m [38;5;159mterm=[mbold,reverse [38;5;159mcterm=[mbold,reverse [38;5;159mctermfg=[m0 [38;5;159mctermbg=[m1 [38;5;159mgui=[mbold,reverse [38;5;159mguifg=[mBlack [38;5;159mguibg=[mDarkBlue
+StatusLineNC   [7m[30m[44mxxx[m [38;5;159mterm=[mreverse [38;5;159mcterm=[mreverse [38;5;159mctermfg=[m0 [38;5;159mctermbg=[m4 [38;5;159mgui=[mreverse [38;5;159mguifg=[mBlack [38;5;159mguibg=[mDarkBlue
+VertSplit      [7m[30m[44mxxx[m [38;5;159mterm=[mreverse [38;5;159mcterm=[mreverse [38;5;159mctermfg=[m0 [38;5;159mctermbg=[m4 [38;5;159mgui=[mreverse [38;5;159mguifg=[mBlack [38;5;159mguibg=[mDarkBlue
+Title[10C[38;5;225mxxx[m [38;5;159mterm=[mbold [38;5;159mctermfg=[m225 [38;5;159mgui=[mbold [38;5;159mguifg=[mMagenta
+Visual[9C[30m[48;5;248mxxx[m [38;5;159mctermfg=[m0 [38;5;159mctermbg=[m248 [38;5;159mguifg=[mLightGrey [38;5;159mguibg=[m#575757
+VisualNOS      [1m[4mxxx[m [38;5;159mterm=[mbold,underline [38;5;159mcterm=[mbold,underline [38;5;159mgui=[mbold,underline
+WarningMsg     [38;5;224mxxx[m [38;5;159mterm=[mstandout [38;5;159mctermfg=[m224 [38;5;159mguifg=[mRed
+WildMenu[7C[30m[103mxxx[m [38;5;159mterm=[mstandout [38;5;159mctermfg=[m0 [38;5;159mctermbg=[m11 [38;5;159mguifg=[mBlack [38;5;159mguibg=[mYellow
+Folded[9C[96m[48;5;242mxxx[m [38;5;159mterm=[mstandout [38;5;159mctermfg=[m14 [38;5;159mctermbg=[m242 [38;5;159mguifg=[mCyan [38;5;159mguibg=[mDarkGrey
+FoldColumn     [96m[48;5;242mxxx[m [38;5;159mterm=[mstandout [38;5;159mctermfg=[m14 [38;5;159mctermbg=[m242 [38;5;159mguifg=[mCyan [38;5;159mguibg=[mGrey
+DiffAdd[8C[44mxxx[m [38;5;159mterm=[mbold [38;5;159mctermbg=[m4 [38;5;159mguibg=[mDarkBlue
+DiffChange     [45mxxx[m [38;5;159mterm=[mbold [38;5;159mctermbg=[m5 [38;5;159mguibg=[mDarkMagenta
+DiffDelete     [94m[46mxxx[m [38;5;159mterm=[mbold [38;5;159mctermfg=[m12 [38;5;159mctermbg=[m6 [38;5;159mgui=[mbold [38;5;159mguifg=[mBlue [38;5;159mguibg=[mDarkCyan
+DiffText[7C[1m[101mxxx[m [38;5;159mterm=[mreverse [38;5;159mcterm=[mbold [38;5;159mctermbg=[m9 [38;5;159mgui=[mbold [38;5;159mguibg=[mRed
+SignColumn     [96mxxx[m [38;5;159mterm=[mstandout [38;5;159mctermfg=[m14 [38;5;159mguifg=[mCyan
+Conceal[8C[37m[48;5;242mxxx[m [38;5;159mctermfg=[m7 [38;5;159mctermbg=[m242 [38;5;159mguifg=[mLightGrey [38;5;159mguibg=[mDarkGrey
+SpellBad[7C[101mxxx[m [38;5;159mterm=[mreverse [38;5;159mctermbg=[m9 [38;5;159mgui=[mundercurl [38;5;159mguisp=[mRed
+SpellCap[7C[104mxxx[m [38;5;159mterm=[mreverse [38;5;159mctermbg=[m12 [38;5;159mgui=[mundercurl [38;5;159mguisp=[mBlue
+SpellRare      [105mxxx[m [38;5;159mterm=[mreverse [38;5;159mctermbg=[m13 [38;5;159mgui=[mundercurl [38;5;159mguisp=[mMagenta
+SpellLocal     [106mxxx[m [38;5;159mterm=[munderline [38;5;159mctermbg=[m14 [38;5;159mgui=[mundercurl [38;5;159mguisp=[mCyan
+Pmenu[10C[30m[105mxxx[m [38;5;159mctermfg=[m0 [38;5;159mctermbg=[m13 [38;5;159mguibg=[mMagenta
+PmenuSel[7C[38;5;242m[40mxxx[m [38;5;159mctermfg=[m242 [38;5;159mctermbg=[m0 [38;5;159mguibg=[mDarkGrey
+PmenuMatch     [30m[105mxxx[m [38;5;159mlinks to[m Pmenu
+PmenuMatchSel  [38;5;242m[40mxxx[m [38;5;159mlinks to[m PmenuSel
+PmenuKind      [30m[105mxxx[m [38;5;159mlinks to[m Pmenu
+PmenuKindSel   [38;5;242m[40mxxx[m [38;5;159mlinks to[m PmenuSel
+PmenuExtra     [30m[105mxxx[m [38;5;159mlinks to[m Pmenu
+PmenuExtraSel  [38;5;242m[40mxxx[m [38;5;159mlinks to[m PmenuSel
+PmenuSbar      [48;5;248mxxx[m [38;5;159mctermbg=[m248 [38;5;159mguibg=[mGrey
+PmenuThumb     [107mxxx[m [38;5;159mctermbg=[m15 [38;5;159mguibg=[mWhite
+TabLine[8C[4m[34m[40mxxx[m [38;5;159mterm=[munderline [38;5;159mcterm=[munderline [38;5;159mctermfg=[m4 [38;5;159mctermbg=[m0 [38;5;159mgui=[munderline [38;5;159mguifg=[mBlack [38;5;159mguibg=[mDarkBlue
+TabLineSel     [1m[31m[40mxxx[m [38;5;159mterm=[mbold [38;5;159mcterm=[mbold [38;5;159mctermfg=[m1 [38;5;159mctermbg=[m0 [38;5;159mgui=[mbold [38;5;159mguifg=[mBlack [38;5;159mguibg=[mDarkBlue
+TabLineFill    [7m[30m[40mxxx[m [38;5;159mterm=[mreverse [38;5;159mcterm=[mreverse [38;5;159mctermfg=[m0 [38;5;159mctermbg=[m0 [38;5;159mgui=[mreverse [38;5;159mguifg=[mBlack [38;5;159mguibg=[mDarkBlue
+CursorColumn   [48;5;242mxxx[m [38;5;159mterm=[mreverse [38;5;159mctermbg=[m242 [38;5;159mguibg=[mGrey40
+CursorLine     [4mxxx[m [38;5;159mterm=[munderline [38;5;159mcterm=[munderline [38;5;159mguibg=[mGrey40
+ColorColumn    [41mxxx[m [38;5;159mterm=[mreverse [38;5;159mctermbg=[m1 [38;5;159mguibg=[mDarkRed
+QuickFixLine   [30m[103mxxx[m [38;5;159mlinks to[m Search
+StatusLineTerm [1m[31m[40mxxx[m [38;5;159mterm=[mbold,reverse [38;5;159mcterm=[mbold [38;5;159mctermfg=[m1 [38;5;159mctermbg=[m0 [38;5;159mgui=[mbold [38;5;159mguifg=[mDarkBlue [38;5;159mguibg=[mBlack
+StatusLineTermNC [34m[40mxxx[m [38;5;159mterm=[mreverse [38;5;159mctermfg=[m4 [38;5;159mctermbg=[m0 [38;5;159mguifg=[mDarkBlue [38;5;159mguibg=[mBlack
+MsgArea[8Cxxx cleared
+Normal[9Cxxx cleared
+MatchParen     [46mxxx[m [38;5;159mterm=[mreverse [38;5;159mctermbg=[m6 [38;5;159mguibg=[mDarkCyan
+ToolbarLine    [48;5;242mxxx[m [38;5;159mterm=[munderline [38;5;159mctermbg=[m242 [38;5;159mguibg=[mGrey50
+ToolbarButton  [1m[30m[47mxxx[m [38;5;159mcterm=[mbold [38;5;159mctermfg=[m0 [38;5;159mctermbg=[m7 [38;5;159mgui=[mbold [38;5;159mguifg=[mBlack [38;5;159mguibg=[mLightGrey
+Comment[8C[96mxxx[m [38;5;159mterm=[mbold [38;5;159mctermfg=[m14 [38;5;159mguifg=[m#80a0ff
+Constant[7C[95mxxx[m [38;5;159mterm=[munderline [38;5;159mctermfg=[m13 [38;5;159mguifg=[m#ffa0a0
+Special[8C[38;5;224mxxx[m [38;5;159mterm=[mbold [38;5;159mctermfg=[m224 [38;5;159mguifg=[mOrange
+Identifier     [1m[96mxxx[m [38;5;159mterm=[munderline [38;5;159mcterm=[mbold [38;5;159mctermfg=[m14 [38;5;159mguifg=[m#40ffff
+Statement      [34mxxx[m [38;5;159mterm=[mbold [38;5;159mctermfg=[m4 [38;5;159mgui=[mbold [38;5;159mguifg=[m#00FF00
+PreProc[8C[38;5;81mxxx[m [38;5;159mterm=[munderline [38;5;159mctermfg=[m81 [38;5;159mguifg=[m#ff80ff
+Type[11C[38;5;121mxxx[m [38;5;159mterm=[munderline [38;5;159mctermfg=[m121 [38;5;159mgui=[mbold [38;5;159mguifg=[m#60ff60
+Underlined     [4m[38;5;81mxxx[m [38;5;159mterm=[munderline [38;5;159mcterm=[munderline [38;5;159mctermfg=[m81 [38;5;159mgui=[munderline [38;5;159mguifg=[m#80a0ff
+Ignore[9C[30mxxx[m [38;5;159mctermfg=[m0 [38;5;159mguifg=[mbg
+Added[10C[92mxxx[m [38;5;159mctermfg=[m10 [38;5;159mguifg=[mLimeGreen
+Changed[8C[94mxxx[m [38;5;159mctermfg=[m12 [38;5;159mguifg=[mDodgerBlue
+Removed[8C[91mxxx[m [38;5;159mctermfg=[m9 [38;5;159mguifg=[mRed
+Error[10C[97m[101mxxx[m [38;5;159mterm=[mreverse [38;5;159mctermfg=[m15 [38;5;159mctermbg=[m9 [38;5;159mguifg=[mWhite [38;5;159mguibg=[mRed
+Todo[11C[30m[103mxxx[m [38;5;159mterm=[mstandout [38;5;159mctermfg=[m0 [38;5;159mctermbg=[m11 [38;5;159mguifg=[mBlue [38;5;159mguibg=[mYellow
+String[9C[36mxxx[m [38;5;159mctermfg=[m6 [38;5;159mguifg=[m#ff00ff
+Character      [95mxxx[m [38;5;159mlinks to[m Constant
+Number[9C[95mxxx[m [38;5;159mlinks to[m Constant
+Boolean[8C[95mxxx[m [38;5;159mlinks to[m Constant
+Float[10C[95mxxx[m [38;5;159mlinks to[m Number
+Function[7C[33mxxx[m [38;5;159mctermfg=[m3 [38;5;159mguifg=[m#00ff00
+Conditional    [34mxxx[m [38;5;159mlinks to[m Statement
+Repeat[9C[34mxxx[m [38;5;159mctermfg=[m4 [38;5;159mguifg=[m#00FF00
+Label[10C[34mxxx[m [38;5;159mlinks to[m Statement
+Operator[7C[34mxxx[m [38;5;159mlinks to[m Statement
+Keyword[8C[34mxxx[m [38;5;159mlinks to[m Statement
+Exception      [34mxxx[m [38;5;159mlinks to[m Statement
+Include[8C[90mxxx[m [38;5;159mctermfg=[m8 [38;5;159mguifg=[m#000000
+Define[9C[38;5;81mxxx[m [38;5;159mlinks to[m PreProc
+Macro[10C[38;5;81mxxx[m [38;5;159mlinks to[m PreProc
+PreCondit      [38;5;81mxxx[m [38;5;159mlinks to[m PreProc
+StorageClass   [38;5;121mxxx[m [38;5;159mlinks to[m Type
+Structure      [38;5;121mxxx[m [38;5;159mlinks to[m Type
+Typedef[8C[38;5;121mxxx[m [38;5;159mlinks to[m Type
+Tag[12C[38;5;224mxxx[m [38;5;159mlinks to[m Special
+SpecialChar    [38;5;224mxxx[m [38;5;159mlinks to[m Special
+Delimiter      [38;5;224mxxx[m [38;5;159mlinks to[m Special
+SpecialComment [38;5;224mxxx[m [38;5;159mlinks to[m Special
+Debug[10C[38;5;224mxxx[m [38;5;159mlinks to[m Special
+GitGutterAdd   [32mxxx[m [38;5;159mctermfg=[m2 [38;5;159mguifg=[m#00ff00
+GitGutterChange [33mxxx[m [38;5;159mctermfg=[m3 [38;5;159mguifg=[m#ffff00
+GitGutterDelete [31mxxx[m [38;5;159mctermfg=[m1 [38;5;159mguifg=[m#ff0000
+cStatement     [92mxxx[m [38;5;159mctermfg=[m10 [38;5;159mguifg=[m#ff0000
+CocSelectedText [91mxxx[m [38;5;159mctermfg=[m9 [38;5;159mguifg=[m#fb4934
+CocCodeLens    [38;5;248mxxx[m [38;5;159mctermfg=[m248 [38;5;159mguifg=[m#999999
+CocUnderline   [4mxxx[m [38;5;159mterm=[munderline [38;5;159mcterm=[munderline [38;5;159mgui=[munderline [38;5;159mguisp=[m#ebdbb2
+CocBold[8C[1mxxx[m [38;5;159mterm=[mbold [38;5;159mcterm=[mbold [38;5;159mgui=[mbold
+CocItalic      [3mxxx[23m [38;5;159mterm=[mitalic [38;5;159mcterm=[mitalic [38;5;159mgui=[mitalic
+CocStrikeThrough [9mxxx[29m [38;5;159mterm=[mstrikethrough [38;5;159mcterm=[mstrikethrough [38;5;159mgui=[mstrikethrough
+CocMarkdownLink [94mxxx[m [38;5;159mctermfg=[m12 [38;5;159mguifg=[m#15aabf
+CocDisabled    [38;5;248mxxx[m [38;5;159mctermfg=[m248 [38;5;159mguifg=[m#999999
+CocSearch      [94mxxx[m [38;5;159mctermfg=[m12 [38;5;159mguifg=[m#15aabf
+CocLink[8C[4mxxx[m [38;5;159mterm=[munderline [38;5;159mcterm=[munderline [38;5;159mgui=[munderline [38;5;159mguisp=[m#15aabf
+CocFloatActive [94mxxx[m [38;5;159mlinks to[m CocSearch
+CocFadeOut     [37m[48;5;242mxxx[m [38;5;159mlinks to[m Conceal
+CocMarkdownCode xxx [38;5;159mlinks to[m markdownCode
+markdownCode   xxx cleared
+CocMarkdownHeader xxx [38;5;159mlinks to[m markdownH1
+markdownH1     xxx cleared
+CocDeprecatedHighlight [9mxxx[29m [38;5;159mlinks to[m CocStrikeThrough
+CocUnusedHighlight [37m[48;5;242mxxx[m [38;5;159mlinks to[m CocFadeOut
+CocListSearch  [94mxxx[m [38;5;159mlinks to[m CocSearch
+CocListMode    [1mxxx[m [38;5;159mlinks to[m ModeMsg
+CocListPath    [96mxxx[m [38;5;159mlinks to[m Comment
+CocHighlightText [48;5;242mxxx[m [38;5;159mlinks to[m CursorColumn
+CocHoverRange  [30m[103mxxx[m [38;5;159mlinks to[m Search
+CocCursorRange [30m[103mxxx[m [38;5;159mlinks to[m Search
+CocLinkedEditing [30m[103mxxx[m [38;5;159mlinks to[m CocCursorRange
+CocHighlightRead [48;5;242mxxx[m [38;5;159mlinks to[m CocHighlightText
+CocHighlightWrite [48;5;242mxxx[m [38;5;159mlinks to[m CocHighlightText
+CocNotificationProgress [94mxxx[m [38;5;159mctermfg=[m12 [38;5;159mguifg=[m#15aabf
+CocNotificationButton [4mxxx[m [38;5;159mlinks to[m CocUnderline
+CocNotificationError xxx [38;5;159mlinks to[m CocErrorFloat
+CocErrorFloat  xxx cleared
+CocNotificationWarning xxx [38;5;159mlinks to[m CocWarningFloat
+CocWarningFloat xxx cleared
+CocNotificationInfo xxx [38;5;159mlinks to[m CocInfoFloat
+CocInfoFloat   xxx cleared
+CocSnippetVisual [30m[48;5;248mxxx[m [38;5;159mlinks to[m Visual
+CocTreeTitle   [38;5;225mxxx[m [38;5;159mlinks to[m Title
+CocTreeDescription [96mxxx[m [38;5;159mlinks to[m Comment
+CocTreeOpenClose [1mxxx[m [38;5;159mlinks to[m CocBold
+CocTreeSelected [4mxxx[m [38;5;159mlinks to[m CursorLine
+CocSelectedRange [48;5;242mxxx[m [38;5;159mlinks to[m CocHighlightText
+CocSymbolDefault [38;5;121mxxx[m [38;5;159mlinks to[m MoreMsg
+CocPumSearch   [94mxxx[m [38;5;159mlinks to[m CocSearch
+CocPumDetail   [96mxxx[m [38;5;159mlinks to[m Comment
+CocPumMenu     xxx [38;5;159mlinks to[m CocFloating
+CocFloating    xxx cleared
+CocPumShortcut [96mxxx[m [38;5;159mlinks to[m Comment
+CocPumDeprecated [9mxxx[29m [38;5;159mlinks to[m CocStrikeThrough
+CocVirtualText [94mxxx[m [38;5;159mctermfg=[m12 [38;5;159mguifg=[m#504945
+CocPumVirtualText [94mxxx[m [38;5;159mlinks to[m CocVirtualText
+CocInputBoxVirtualText [94mxxx[m [38;5;159mlinks to[m CocVirtualText
+CocFloatDividingLine [94mxxx[m [38;5;159mlinks to[m CocVirtualText
+CocListBlackBlack xxx [38;5;159mguifg=[m#282828 [38;5;159mguibg=[m#282828
+CocListBlackBlue xxx [38;5;159mguifg=[m#282828 [38;5;159mguibg=[m#458588
+CocListBlackGreen xxx [38;5;159mguifg=[m#282828 [38;5;159mguibg=[m#98971a
+CocListBlackGrey xxx [38;5;159mguifg=[m#282828 [38;5;159mguibg=[m#928374
+CocListBlackWhite xxx [38;5;159mguifg=[m#282828 [38;5;159mguibg=[m#a89984
+CocListBlackCyan xxx [38;5;159mguifg=[m#282828 [38;5;159mguibg=[m#689d6a
+CocListBlackYellow xxx [38;5;159mguifg=[m#282828 [38;5;159mguibg=[m#d79921
+CocListBlackMagenta xxx [38;5;159mguifg=[m#282828 [38;5;159mguibg=[m#b16286
+CocListBlackRed xxx [38;5;159mguifg=[m#282828 [38;5;159mguibg=[m#cc241d
+CocListFgBlack [30mxxx[m [38;5;159mctermfg=[m0 [38;5;159mguifg=[m#282828
+CocListBgBlack [40mxxx[m [38;5;159mctermbg=[m0 [38;5;159mguibg=[m#282828
+CocListBlueBlack xxx [38;5;159mguifg=[m#458588 [38;5;159mguibg=[m#282828
+CocListBlueBlue xxx [38;5;159mguifg=[m#458588 [38;5;159mguibg=[m#458588
+CocListBlueGreen xxx [38;5;159mguifg=[m#458588 [38;5;159mguibg=[m#98971a
+CocListBlueGrey xxx [38;5;159mguifg=[m#458588 [38;5;159mguibg=[m#928374
+CocListBlueWhite xxx [38;5;159mguifg=[m#458588 [38;5;159mguibg=[m#a89984
+CocListBlueCyan xxx [38;5;159mguifg=[m#458588 [38;5;159mguibg=[m#689d6a
+CocListBlueYellow xxx [38;5;159mguifg=[m#458588 [38;5;159mguibg=[m#d79921
+CocListBlueMagenta xxx [38;5;159mguifg=[m#458588 [38;5;159mguibg=[m#b16286
+CocListBlueRed xxx [38;5;159mguifg=[m#458588 [38;5;159mguibg=[m#cc241d
+CocListFgBlue  [94mxxx[m [38;5;159mctermfg=[m12 [38;5;159mguifg=[m#458588
+CocListBgBlue  [104mxxx[m [38;5;159mctermbg=[m12 [38;5;159mguibg=[m#458588
+CocListGreenBlack xxx [38;5;159mguifg=[m#98971a [38;5;159mguibg=[m#282828
+CocListGreenBlue xxx [38;5;159mguifg=[m#98971a [38;5;159mguibg=[m#458588
+CocListGreenGreen xxx [38;5;159mguifg=[m#98971a [38;5;159mguibg=[m#98971a
+CocListGreenGrey xxx [38;5;159mguifg=[m#98971a [38;5;159mguibg=[m#928374
+CocListGreenWhite xxx [38;5;159mguifg=[m#98971a [38;5;159mguibg=[m#a89984
+CocListGreenCyan xxx [38;5;159mguifg=[m#98971a [38;5;159mguibg=[m#689d6a
+CocListGreenYellow xxx [38;5;159mguifg=[m#98971a [38;5;159mguibg=[m#d79921
+CocListGreenMagenta xxx [38;5;159mguifg=[m#98971a [38;5;159mguibg=[m#b16286
+CocListGreenRed xxx [38;5;159mguifg=[m#98971a [38;5;159mguibg=[m#cc241d
+CocListFgGreen [92mxxx[m [38;5;159mctermfg=[m10 [38;5;159mguifg=[m#98971a
+CocListBgGreen [102mxxx[m [38;5;159mctermbg=[m10 [38;5;159mguibg=[m#98971a
+CocListGreyBlack xxx [38;5;159mguifg=[m#928374 [38;5;159mguibg=[m#282828
+CocListGreyBlue xxx [38;5;159mguifg=[m#928374 [38;5;159mguibg=[m#458588
+CocListGreyGreen xxx [38;5;159mguifg=[m#928374 [38;5;159mguibg=[m#98971a
+CocListGreyGrey xxx [38;5;159mguifg=[m#928374 [38;5;159mguibg=[m#928374
+CocListGreyWhite xxx [38;5;159mguifg=[m#928374 [38;5;159mguibg=[m#a89984
+CocListGreyCyan xxx [38;5;159mguifg=[m#928374 [38;5;159mguibg=[m#689d6a
+CocListGreyYellow xxx [38;5;159mguifg=[m#928374 [38;5;159mguibg=[m#d79921
+CocListGreyMagenta xxx [38;5;159mguifg=[m#928374 [38;5;159mguibg=[m#b16286
+CocListGreyRed xxx [38;5;159mguifg=[m#928374 [38;5;159mguibg=[m#cc241d
+CocListFgGrey  [38;5;248mxxx[m [38;5;159mctermfg=[m248 [38;5;159mguifg=[m#928374
+CocListBgGrey  [48;5;248mxxx[m [38;5;159mctermbg=[m248 [38;5;159mguibg=[m#928374
+CocListWhiteBlack xxx [38;5;159mguifg=[m#a89984 [38;5;159mguibg=[m#282828
+CocListWhiteBlue xxx [38;5;159mguifg=[m#a89984 [38;5;159mguibg=[m#458588
+CocListWhiteGreen xxx [38;5;159mguifg=[m#a89984 [38;5;159mguibg=[m#98971a
+CocListWhiteGrey xxx [38;5;159mguifg=[m#a89984 [38;5;159mguibg=[m#928374
+CocListWhiteWhite xxx [38;5;159mguifg=[m#a89984 [38;5;159mguibg=[m#a89984
+CocListWhiteCyan xxx [38;5;159mguifg=[m#a89984 [38;5;159mguibg=[m#689d6a
+CocListWhiteYellow xxx [38;5;159mguifg=[m#a89984 [38;5;159mguibg=[m#d79921
+CocListWhiteMagenta xxx [38;5;159mguifg=[m#a89984 [38;5;159mguibg=[m#b16286
+CocListWhiteRed xxx [38;5;159mguifg=[m#a89984 [38;5;159mguibg=[m#cc241d
+CocListFgWhite [97mxxx[m [38;5;159mctermfg=[m15 [38;5;159mguifg=[m#a89984
+CocListBgWhite [107mxxx[m [38;5;159mctermbg=[m15 [38;5;159mguibg=[m#a89984
+CocListCyanBlack xxx [38;5;159mguifg=[m#689d6a [38;5;159mguibg=[m#282828
+CocListCyanBlue xxx [38;5;159mguifg=[m#689d6a [38;5;159mguibg=[m#458588
+CocListCyanGreen xxx [38;5;159mguifg=[m#689d6a [38;5;159mguibg=[m#98971a
+CocListCyanGrey xxx [38;5;159mguifg=[m#689d6a [38;5;159mguibg=[m#928374
+CocListCyanWhite xxx [38;5;159mguifg=[m#689d6a [38;5;159mguibg=[m#a89984
+CocListCyanCyan xxx [38;5;159mguifg=[m#689d6a [38;5;159mguibg=[m#689d6a
+CocListCyanYellow xxx [38;5;159mguifg=[m#689d6a [38;5;159mguibg=[m#d79921
+CocListCyanMagenta xxx [38;5;159mguifg=[m#689d6a [38;5;159mguibg=[m#b16286
+CocListCyanRed xxx [38;5;159mguifg=[m#689d6a [38;5;159mguibg=[m#cc241d
+CocListFgCyan  [96mxxx[m [38;5;159mctermfg=[m14 [38;5;159mguifg=[m#689d6a
+CocListBgCyan  [106mxxx[m [38;5;159mctermbg=[m14 [38;5;159mguibg=[m#689d6a
+CocListYellowBlack xxx [38;5;159mguifg=[m#d79921 [38;5;159mguibg=[m#282828
+CocListYellowBlue xxx [38;5;159mguifg=[m#d79921 [38;5;159mguibg=[m#458588
+CocListYellowGreen xxx [38;5;159mguifg=[m#d79921 [38;5;159mguibg=[m#98971a
+CocListYellowGrey xxx [38;5;159mguifg=[m#d79921 [38;5;159mguibg=[m#928374
+CocListYellowWhite xxx [38;5;159mguifg=[m#d79921 [38;5;159mguibg=[m#a89984
+CocListYellowCyan xxx [38;5;159mguifg=[m#d79921 [38;5;159mguibg=[m#689d6a
+CocListYellowYellow xxx [38;5;159mguifg=[m#d79921 [38;5;159mguibg=[m#d79921
+CocListYellowMagenta xxx [38;5;159mguifg=[m#d79921 [38;5;159mguibg=[m#b16286
+CocListYellowRed xxx [38;5;159mguifg=[m#d79921 [38;5;159mguibg=[m#cc241d
+CocListFgYellow [93mxxx[m [38;5;159mctermfg=[m11 [38;5;159mguifg=[m#d79921
+CocListBgYellow [103mxxx[m [38;5;159mctermbg=[m11 [38;5;159mguibg=[m#d79921
+CocListMagentaBlack xxx [38;5;159mguifg=[m#b16286 [38;5;159mguibg=[m#282828
+CocListMagentaBlue xxx [38;5;159mguifg=[m#b16286 [38;5;159mguibg=[m#458588
+CocListMagentaGreen xxx [38;5;159mguifg=[m#b16286 [38;5;159mguibg=[m#98971a
+CocListMagentaGrey xxx [38;5;159mguifg=[m#b16286 [38;5;159mguibg=[m#928374
+CocListMagentaWhite xxx [38;5;159mguifg=[m#b16286 [38;5;159mguibg=[m#a89984
+CocListMagentaCyan xxx [38;5;159mguifg=[m#b16286 [38;5;159mguibg=[m#689d6a
+CocListMagentaYellow xxx [38;5;159mguifg=[m#b16286 [38;5;159mguibg=[m#d79921
+CocListMagentaMagenta xxx [38;5;159mguifg=[m#b16286 [38;5;159mguibg=[m#b16286
+CocListMagentaRed xxx [38;5;159mguifg=[m#b16286 [38;5;159mguibg=[m#cc241d
+CocListFgMagenta [95mxxx[m [38;5;159mctermfg=[m13 [38;5;159mguifg=[m#b16286
+CocListBgMagenta [105mxxx[m [38;5;159mctermbg=[m13 [38;5;159mguibg=[m#b16286
+CocListRedBlack xxx [38;5;159mguifg=[m#cc241d [38;5;159mguibg=[m#282828
+CocListRedBlue xxx [38;5;159mguifg=[m#cc241d [38;5;159mguibg=[m#458588
+CocListRedGreen xxx [38;5;159mguifg=[m#cc241d [38;5;159mguibg=[m#98971a
+CocListRedGrey xxx [38;5;159mguifg=[m#cc241d [38;5;159mguibg=[m#928374
+CocListRedWhite xxx [38;5;159mguifg=[m#cc241d [38;5;159mguibg=[m#a89984
+CocListRedCyan xxx [38;5;159mguifg=[m#cc241d [38;5;159mguibg=[m#689d6a
+CocListRedYellow xxx [38;5;159mguifg=[m#cc241d [38;5;159mguibg=[m#d79921
+CocListRedMagenta xxx [38;5;159mguifg=[m#cc241d [38;5;159mguibg=[m#b16286
+CocListRedRed  xxx [38;5;159mguifg=[m#cc241d [38;5;159mguibg=[m#cc241d
+CocListFgRed   [91mxxx[m [38;5;159mctermfg=[m9 [38;5;159mguifg=[m#cc241d
+CocListBgRed   [101mxxx[m [38;5;159mctermbg=[m9 [38;5;159mguibg=[m#cc241d
+CocMenuSel     xxx cleared
+CocListLine    xxx cleared
+GitGutterAddInvisible xxx [38;5;159mguifg=[mbg
+GitGutterChangeInvisible xxx [38;5;159mguifg=[mbg
+GitGutterDeleteInvisible xxx [38;5;159mguifg=[mbg
+GitGutterChangeDeleteInvisible xxx [38;5;159mlinks to[m GitGutterChangeInvisible
+GitGutterChangeDelete [33mxxx[m [38;5;159mlinks to[m GitGutterChange
+GitGutterAddLine [44mxxx[m [38;5;159mlinks to[m DiffAdd
+GitGutterChangeLine [45mxxx[m [38;5;159mlinks to[m DiffChange
+GitGutterDeleteLine [94m[46mxxx[m [38;5;159mlinks to[m DiffDelete
+GitGutterChangeDeleteLine [45mxxx[m [38;5;159mlinks to[m GitGutterChangeLine
+GitGutterAddLineNr [4m[93mxxx[m [38;5;159mlinks to[m CursorLineNr
+GitGutterChangeLineNr [4m[93mxxx[m [38;5;159mlinks to[m CursorLineNr
+GitGutterDeleteLineNr [4m[93mxxx[m [38;5;159mlinks to[m CursorLineNr
+GitGutterChangeDeleteLineNr [4m[93mxxx[m [38;5;159mlinks to[m GitGutterChangeLineNr
+GitGutterAddIntraLine [7mxxx[m [38;5;159mcterm=[mreverse [38;5;159mgui=[mreverse
+GitGutterDeleteIntraLine [7mxxx[m [38;5;159mcterm=[mreverse [38;5;159mgui=[mreverse
+diffAdded      [32mxxx[m [38;5;159mctermfg=[m2 [38;5;159mguifg=[m#00ff00
+diffChanged    [33mxxx[m [38;5;159mctermfg=[m3 [38;5;159mguifg=[m#ffff00
+diffRemoved    [31mxxx[m [38;5;159mctermfg=[m1 [38;5;159mguifg=[m#ff0000
+NONE[11Cxxx cleared
+IndentLineSign [38;5;248mxxx[m [38;5;159mctermfg=[m248[?2004l[>4;m[23;2t[23;1t
+[?1004l[?2004l[?1l>[?1049l[23;0;0t[>4;m
